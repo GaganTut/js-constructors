@@ -18,6 +18,15 @@
    * @name getDetails
    * @return {string} details containing all of the spells information.
    */
+function Spell(name, cost, description) {
+  this.name = name;
+  this.cost = cost;
+  this.description = description;
+}
+
+Spell.prototype.getDetails = function() {
+  return this.name + " " + this.cost + " " + this.description;
+};
 
 /**
  * A spell that deals damage.
